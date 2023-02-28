@@ -1,0 +1,16 @@
+<div  style="width:100%;min-height:100px;display:flex;align-items:center;justify-content:center">
+    <h2>Your Search results {{name}}</h2>
+</div>
+<div><h1>Extracted sentences</h1>
+{{#each data}}
+
+    <p>{{this}}</p>
+{{/each}}
+</div>
+<br><br>
+<div>
+    <h1>Paragraphs close to the sentence</h1>
+    {{#each ps}}
+    <p>{{this}}</p>
+    {{/each}}
+</div>
